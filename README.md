@@ -20,7 +20,7 @@ Work in progress port of 3DShell (Multi purpose file manager) to the Nintendo Sw
 # Build instructions
 
 ```bash
-git clone https://github.com/joel16/NX-Shell.git
+git clone https://github.com/kairuuu/NX-Shell.git
 cd NX-Shell/ && git submodule update --init --recursive
 cd mupdf/ && make generate
 cd ../ && make
