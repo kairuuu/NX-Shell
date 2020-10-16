@@ -1,6 +1,6 @@
 # NX-Shell
 
-Work in progress port of 3DShell (Multi purpose file manager) to the Nintendo Switch.
+Work in progress port of 3DShell (Multi purpose file manager) to the Nintendo Switch. This repo intending to customize, but is likely dead now.
 
 # Features:
 
