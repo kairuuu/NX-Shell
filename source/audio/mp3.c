@@ -373,7 +373,7 @@ int MP3_GetProgress(void)
 void MP3_Init(char *path)
 {
 	int err = 0, meta = 0;
-
+	// Init the MPG123 handler
 	err = mpg123_init();
 	if (err != MPG123_OK)
 		return;
@@ -389,7 +389,7 @@ void MP3_Init(char *path)
 	err = mpg123_open(mp3_handle, path);
 	if (err != MPG123_OK)
 		return;
-
+	// Is the bitrate handled here?
 	numberOfSamples = mpg123_length(mp3_handle);
 
 	mpg123_id3v1 *v1;
