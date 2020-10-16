@@ -129,7 +129,7 @@ static void Menu_ControlHome(u64 input, TouchInfo touchInfo)
 		else if (input & KEY_RIGHT)
 			position = ((strcmp(cwd, ROOT_PATH) == 0? (fileCount - 1) : fileCount));
 
-		// Open options
+		// Open options by setting the menu state
 		if (input & KEY_X)
 		{
 			if (MENU_DEFAULT_STATE == MENU_STATE_OPTIONS)
@@ -140,7 +140,7 @@ static void Menu_ControlHome(u64 input, TouchInfo touchInfo)
 
 		if (input & KEY_Y)
 			Menu_HandleMultiSelect();
-
+		// Delay 5 before sending the open call 
 		if (input & KEY_A)
 		{
 			wait(5);
