@@ -5,7 +5,7 @@
 
 #define TAP_MOVEMENT_GAP 20
 #define LONG_TAP_PERIOD 1.5
-
+// Hard set touch time for long press
 
 void Touch_Init(TouchInfo * touchInfo)
 {
@@ -33,7 +33,7 @@ void Touch_Process(TouchInfo * touchInfo)
         touchInfo->tapType = TapShort;
         touchInfo->touchStart = current_time;
     }
-    // On touch moving.
+    // On touch moving. What tracks the touch stack here?
     else if (touches >= 1 && touchInfo->state != TouchNone)
     {
         touchInfo->state = TouchMoving;
